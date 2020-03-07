@@ -7,6 +7,7 @@
 
 package frc.robot.commands.Shooter;
 
+import edu.wpi.first.wpilibj.GenericHID.Hand;
 import edu.wpi.first.wpilibj2.command.CommandBase;
 import frc.robot.Robot;
 import frc.robot.RobotMap;
@@ -35,7 +36,7 @@ public class ShooterGoalOfTheDay extends CommandBase {
     // double distanceInInches = Robot.limelight.getDistanceFrom();
     double distanceInTicks = Robot.limelight.distanceInTicks(RobotMap.SHOOTER_TICKS_PER_INCH);
 
-    if (Robot.oi.mechanism.getBButton()) {
+    if (Robot.oi.mechanism.getBumper(Hand.kRight)) {
       Robot.shooter.shootDistance(distanceInTicks);
       done = true;
     } else {

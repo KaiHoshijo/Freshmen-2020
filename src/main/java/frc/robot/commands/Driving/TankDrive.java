@@ -31,8 +31,8 @@ public class TankDrive extends Command {
   @Override
   protected void execute() {
 
-    double driverAxis = Robot.oi.getControllerAxis(Robot.oi.driver, RobotMap.ROBOT_DRIVE_YAXIS);
-    double driverAxis2 = Robot.oi.getControllerAxis(Robot.oi.driver, RobotMap.ROBOT_DRIVE_XAXIS);
+    double driverAxis = Robot.oi.getControllerAxis(Robot.oi.driver, RobotMap.ROBOT_DRIVE_LEFT_AXIS);
+    double driverAxis2 = Robot.oi.getControllerAxis(Robot.oi.driver, RobotMap.ROBOT_DRIVE_RIGHT_AXIS);
 
     double varSpeed = 0.60;
 
@@ -62,8 +62,8 @@ public class TankDrive extends Command {
     if (Robot.driveTrain.getDeadzone(driverAxis))
       driverAxis = 0;
       
-    Robot.driveTrain.setLeftMotorSpeed(driverAxis2 + driverAxis);
-    Robot.driveTrain.setRightMotorSpeed(driverAxis2 + driverAxis);
+    Robot.driveTrain.setLeftMotorSpeed(driverAxis);
+    Robot.driveTrain.setRightMotorSpeed(driverAxis2);
   }
 
   // Make this return true when this Command no longer needs to run execute()

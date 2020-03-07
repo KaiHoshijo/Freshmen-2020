@@ -37,7 +37,7 @@ public class ColorSpinner extends Command {
   @Override
   public void execute() {
 
-    if (Robot.oi.driver.getBButton()) { // remove later just for testing
+    if (Robot.oi.mechanism.getBButton()) { // remove later just for testing
       isOn = true;
     }
 

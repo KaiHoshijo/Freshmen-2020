@@ -28,7 +28,8 @@ public class RobotMap {
 
   // Drive Controller Port
   public static final int ROBOT_DRIVE_CONTROLLER = 0;
-  public static final int ROBOT_DRIVE_YAXIS = 1;
+  public static final int ROBOT_DRIVE_LEFT_AXIS = 1;
+  public static final int ROBOT_DRIVE_RIGHT_AXIS = 5;
   public static final int ROBOT_DRIVE_XAXIS = 0;
   public static final int ROBOT_DRIVE_XAXIS_2 = 4;
 
