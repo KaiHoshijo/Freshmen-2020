@@ -16,10 +16,10 @@ package frc.robot;
 public class RobotMap {
   // Motor Port Number
   // TODO: put right motor numbers
-  public static final int FRONT_RIGHT_MOTOR = 20;
-  public static final int BACK_RIGHT_MOTOR = 21;
-  public static final int FRONT_LEFT_MOTOR = 22;
-  public static final int BACK_LEFT_MOTOR = 23;
+  public static final int FRONT_RIGHT_MOTOR = 7;
+  public static final int BACK_RIGHT_MOTOR = 8;
+  public static final int FRONT_LEFT_MOTOR = 4;
+  public static final int BACK_LEFT_MOTOR = 6;
 
   //  public static final int FRONT_RIGHT_MOTOR = 3;
   //  public static final int BACK_RIGHT_MOTOR = 2;
@@ -47,12 +47,12 @@ public class RobotMap {
 
   // spinner motor port
   // TODO: put right motor ports
-  public static final int SPINNER_MOTOR = 24;
+  public static final int SPINNER_MOTOR = 13;
 
   // shooter motor ports
   // TODO: put right motor ports
-  public static final int SHOOTER_TOP = 25;
-  public static final int SHOOTER_BOTTOM = 26;
+  public static final int SHOOTER_TOP = 30;
+  public static final int SHOOTER_BOTTOM = 3;
 
   // shooter distance per 4096 ticks
   public static final double SHOOTER_TICKS_PER_INCH = 4096 / (Math.PI * SHOOTER_WHEEL_DIAMETER);
@@ -66,11 +66,11 @@ public class RobotMap {
 
   // elevator motor port
   // TODO: put right motor ports
-  public static final int ELEVATOR_MOTOR = 27;
+  public static final int ELEVATOR_MOTOR = 5;
   public static final double DISTANCE_PER_PLUSE = ELEVEATOR_WHEEL_DIAMETER * Math.PI;
 
   // PID variables for elevator height
-  public static final double ELEVATOR_TARGET_HEIGHT = -10;
+  public static final double ELEVATOR_TARGET_HEIGHT = - .5 * 4096;
   public static final double kPElevator = 0.2;
   public static final double kIElevator = 0.0001;
   public static final double kDElevator = 0.0;
@@ -96,11 +96,12 @@ public class RobotMap {
   public static final double TARGET_ANGLE = 0;
 
   // Intake motor ports
-  public static final int LEFT_INTAKE_MOTOR = 6;
-  public static final int RIGHT_INTAKE_MOTOR = 4;
+  public static final int LEFT_INTAKE_MOTOR = 1;
+  public static final int RIGHT_INTAKE_MOTOR = 14;
   
   // Intake motor speed
-  public static final double INTAKE_SPEED = .35;
+  public static final double INTAKE_SPEED = .1;
+
 
   // Autonomous center
   public static final double AUTONOMOUS_CENTER_DRIVE_TIME = 1;
